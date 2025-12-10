@@ -11,7 +11,8 @@ const Navbar = () => {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/projects", label: "Projects" },
-    { href: "/phishing-showcase", label: "Phishing Showcase" },
+    { href: "/phishing-showcase", label: "Phishing Detector" },
+    { href: "/powerbi-showcase", label: "Power BI" },
   ];
 
   return (
