@@ -188,7 +188,12 @@ const Index = () => {
             </Button>
             <Button variant="outline" size="lg" asChild>
               <Link to="/phishing-showcase">
-                View Phishing Showcase
+                Phishing Detector
+              </Link>
+            </Button>
+            <Button variant="outline" size="lg" asChild>
+              <Link to="/powerbi-showcase">
+                Power BI Project
               </Link>
             </Button>
           </div>
