@@ -4,44 +4,26 @@ import Footer from "@/components/Footer";
 import SkillBadge from "@/components/SkillBadge";
 import { ArrowRight, Linkedin, Shield, Code, Brain, Users } from "lucide-react";
 import { Link } from "react-router-dom";
-
 const Index = () => {
-  const skills = [
-    "Cybersecurity",
-    "Python",
-    "SQL",
-    "Automation",
-    "Technical Analysis",
-    "Problem Solving",
-    "Documentation",
-    "Team Leadership",
-  ];
-
-  const highlights = [
-    {
-      icon: Shield,
-      title: "Security-First Mindset",
-      description: "Passionate about protecting systems and making technology more secure.",
-    },
-    {
-      icon: Code,
-      title: "Automation & Efficiency",
-      description: "Building workflows that make systems smarter and processes faster.",
-    },
-    {
-      icon: Brain,
-      title: "Relentless Learner",
-      description: "Constantly diving deep into new technologies and best practices.",
-    },
-    {
-      icon: Users,
-      title: "Collaborative Leader",
-      description: "Thriving in team environments, turning ideas into real solutions.",
-    },
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  const skills = ["Cybersecurity", "Python", "SQL", "Automation", "Technical Analysis", "Problem Solving", "Documentation", "Team Leadership"];
+  const highlights = [{
+    icon: Shield,
+    title: "Security-First Mindset",
+    description: "Passionate about protecting systems and making technology more secure."
+  }, {
+    icon: Code,
+    title: "Automation & Efficiency",
+    description: "Building workflows that make systems smarter and processes faster."
+  }, {
+    icon: Brain,
+    title: "Relentless Learner",
+    description: "Constantly diving deep into new technologies and best practices."
+  }, {
+    icon: Users,
+    title: "Collaborative Leader",
+    description: "Thriving in team environments, turning ideas into real solutions."
+  }];
+  return <div className="min-h-screen bg-background">
       <Navbar />
 
       {/* Hero Section */}
@@ -60,22 +42,24 @@ const Index = () => {
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-6 animate-fade-in" style={{
+            animationDelay: "0.1s"
+          }}>
               Hi, I'm{" "}
               <span className="text-gradient">Victor Cruz</span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 font-light animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            <p className="text-xl md:text-2xl text-muted-foreground mb-8 font-light animate-fade-in" style={{
+            animationDelay: "0.2s"
+          }}>
               Aspiring Cybersecurity Analyst & Technical Analyst
             </p>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in" style={{ animationDelay: "0.3s" }}>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in" style={{
+            animationDelay: "0.3s"
+          }}>
               <Button variant="hero" size="lg" asChild>
-                <a
-                  href="https://www.linkedin.com/in/victorcruzalvarez"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://www.linkedin.com/in/victorcruzalvarez" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="w-5 h-5" />
                   Connect on LinkedIn
                 </a>
@@ -108,13 +92,10 @@ const Index = () => {
 
             <div className="bg-gradient-card rounded-2xl p-8 md:p-12 border border-border shadow-elevated">
               <div className="prose prose-invert max-w-none">
-                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  I'm <span className="text-foreground font-semibold">Victor Cruz</span>—an aspiring Cybersecurity Analyst, hands-on problem solver, and the Technical Analyst for my project group, <span className="text-primary">Erudition Tech</span>. I'm currently part of I.C. Stars Cycle 19, where every day pushes me to grow as both a leader and a technologist.
+                <p className="text-lg text-muted-foreground leading-relaxed mb-6">I'm Victor Cruz an aspiring Cybersecurity Analyst, hands-on problem solver, and the Technical Analyst for my project group, Erudition Tech. I'm currently part of I.C. Stars Cycle 19, where every day pushes me to grow as both a leader and a technologist.<span className="text-foreground font-semibold">Victor Cruz</span>—an aspiring Cybersecurity Analyst, hands-on problem solver, and the Technical Analyst for my project group, <span className="text-primary">Erudition Tech</span>. I'm currently part of I.C. Stars Cycle 19, where every day pushes me to grow as both a leader and a technologist.
                 </p>
 
-                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  I'm someone who thinks calmly, works creatively, and learns relentlessly. If something piques my curiosity, I'm diving in—researching, testing, building, and improving until I understand it. Whether I'm developing automation workflows, organizing technical documentation, or experimenting with Python and SQL, I'm always looking for ways to make systems smarter and more efficient.
-                </p>
+                <p className="text-lg text-muted-foreground leading-relaxed mb-6">I'm someone who thinks calmly, works creatively, and learns relentlessly. If something piques my curiosity, I'm diving in researching, testing, building, and improving until I understand it. Whether I'm developing automation workflows, organizing technical documentation, or experimenting with Python and SQL, I'm always looking for ways to make systems smarter and more efficient.</p>
 
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                   At Erudition Tech, I bring structure and clarity to our technical challenges. I help analyze problems, break down requirements, and guide my team toward practical solutions. I'm not afraid to ask questions, listen deeply, and step up when my team needs support. Collaboration is where I thrive, and I enjoy helping ideas turn into real working solutions.
@@ -135,9 +116,7 @@ const Index = () => {
                   Core Skills
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {skills.map((skill) => (
-                    <SkillBadge key={skill} skill={skill} />
-                  ))}
+                  {skills.map(skill => <SkillBadge key={skill} skill={skill} />)}
                 </div>
               </div>
             </div>
@@ -153,19 +132,15 @@ const Index = () => {
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            {highlights.map((item, index) => (
-              <div
-                key={item.title}
-                className="group p-6 rounded-xl bg-gradient-card border border-border hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 animate-fade-in"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
+            {highlights.map((item, index) => <div key={item.title} className="group p-6 rounded-xl bg-gradient-card border border-border hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 animate-fade-in" style={{
+            animationDelay: `${index * 0.1}s`
+          }}>
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:glow-primary transition-all duration-300">
                   <item.icon className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="font-display font-semibold text-lg mb-2">{item.title}</h3>
                 <p className="text-sm text-muted-foreground">{item.description}</p>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -201,8 +176,6 @@ const Index = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
